@@ -1,0 +1,21 @@
+{
+  "role": {
+    "name": "app_service_role",
+    "object_privileges": [
+      {
+        "name": "CV_SALES_ANALYSIS",
+        "type": "VIEW",
+        "privileges": [
+          "SELECT"
+        ]
+      }
+    ],
+    "schema_privileges": [
+      {
+        "privileges": [
+          "SELECT"
+        ]
+      }
+    ]
+  }
+}

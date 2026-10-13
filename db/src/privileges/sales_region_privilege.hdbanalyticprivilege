@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore"
+    id="sales_region_privilege" privilegeType="SQL_ANALYTIC_PRIVILEGE">
+    <description>Filter data by sales region</description> <!-- Define which view this privilege
+    applies to -->
+    <securingViews>
+        <securingView>CV_SALES_ANALYSIS</securingView>
+    </securingViews> <!-- Define the filter
+    condition -->
+    <securedModels>
+        <modelUri>CV_SALES_ANALYSIS</modelUri>
+        <attributeRestriction attributeName="REGION">
+            <restriction>
+                <valueFilter operator="CP">EMEA*</valueFilter>
+            </restriction>
+        </attributeRestriction>
+    </securedModels>
+</Privilege:analyticPrivilege>

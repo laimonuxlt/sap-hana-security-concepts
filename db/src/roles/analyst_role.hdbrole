@@ -1,0 +1,19 @@
+{
+    "role": {
+        "name": "analyst_role",
+        "schema_privileges": [
+            {
+                "privileges": [
+                    "SELECT"
+                ]
+            }
+        ],
+        "schema_analytic_privileges": [
+            {
+                "privileges": [
+                    "sales_region_privilege"
+                ]
+            }
+        ]
+    }
+}
